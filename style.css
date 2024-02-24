@@ -1,0 +1,1596 @@
+  /* CODE BASIC TO SET MARING AND PADDING TO 0 */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Futura", sans-serif;
+    font-weight: 100;
+}
+
+/* CREATING A NAVBAR IN DISPLAY:FLEX */
+.navbar{
+    height: 164px;
+    width: 1340px;
+    position: fixed;
+    top: 2rem;
+    z-index: 12; 
+   
+    
+}
+
+/* NAV BAR OPTIONS CUSTOMISATION */
+
+#Horizontal{
+    width: 1250px;
+    position: absolute;
+    left: 40px;
+    top: 90px;
+    border-color:rgba(211, 211, 211,0.2);
+}
+
+.main_link{
+  height: 90px;
+  width: 100px;
+  position: absolute;
+        top:0px;
+        left: 0px;
+}
+
+/* HOVER COSTOMAIZATION FOR NAV BAR */
+.navbar:hover{
+  transition: background-color 0.5s ease 0.001s;
+    background-color: white;
+    #search{
+            background-image: url(/Image/Search_new.png);
+            width: 25px;
+            height: 25px;
+            position:absolute;
+            top: 9px;
+            left: 0px;
+            
+    }
+    #Heading{
+        color: rgba(0,0,0,0.5);
+    }
+    #logo{
+        background-image: url(/Image/logo.avif);
+        height: 90px;
+        width: 100px;
+        position: absolute;
+        top:0px;
+        left: 630px;
+    }
+    #home,
+    #shop_all,
+    #men,
+    #women,
+    #rich_cotton,
+    #get_in_touch{
+        color: black;
+
+    }
+
+}
+/* GIVE SOME TRANSITION FOR GOOD LOOKING */
+.navbar #home::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Adjust this value to position the underline */
+    width: 0;
+    height: 1px; /* Adjust this value to change the thickness of the underline */
+    background-color: rgb(0,0,0); /* Adjust this value to change the color of the underline */
+    transition: width 0.3s ease; /* Adjust the transition timing and easing as needed */
+  }
+  
+  .navbar #home:hover::after {
+    width: 100%;
+  }
+
+.navbar #shop_all::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Adjust this value to position the underline */
+    width: 0;
+    height: 1px; /* Adjust this value to change the thickness of the underline */
+    background-color: rgb(0,0,0); /* Adjust this value to change the color of the underline */
+    transition: width 0.3s ease; /* Adjust the transition timing and easing as needed */
+  }
+  
+  .navbar #shop_all:hover::after {
+    width: 100%;
+  }
+
+
+.navbar #men::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Adjust this value to position the underline */
+    width: 0;
+    height: 1px; /* Adjust this value to change the thickness of the underline */
+    background-color: rgb(0,0,0); /* Adjust this value to change the color of the underline */
+    transition: width 0.3s ease; /* Adjust the transition timing and easing as needed */
+  }
+  
+  .navbar #men:hover::after {
+    width: 100%;
+  }
+
+.navbar #women::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Adjust this value to position the underline */
+    width: 0;
+    height: 1px; /* Adjust this value to change the thickness of the underline */
+    background-color: rgb(0,0,0); /* Adjust this value to change the color of the underline */
+    transition: width 0.3s ease; /* Adjust the transition timing and easing as needed */
+  }
+  
+  .navbar #women:hover::after {
+    width: 100%;
+  }
+.navbar #sale::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Adjust this value to position the underline */
+    width: 0;
+    height: 1px; /* Adjust this value to change the thickness of the underline */
+    background-color: rgb(0,0,0); /* Adjust this value to change the color of the underline */
+    transition: width 0.3s ease; /* Adjust the transition timing and easing as needed */
+  }
+  
+  .navbar #sale:hover::after {
+    width: 100%;
+  }  
+
+
+.navbar #rich_cotton::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Adjust this value to position the underline */
+    width: 0;
+    height: 1px; /* Adjust this value to change the thickness of the underline */
+    background-color: rgb(0,0,0); /* Adjust this value to change the color of the underline */
+    transition: width 0.3s ease; /* Adjust the transition timing and easing as needed */
+  }
+  
+  .navbar #rich_cotton:hover::after {
+    width: 100%;
+  }
+
+
+.navbar #get_in_touch::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Adjust this value to position the underline */
+    width: 0;
+    height: 1px; /* Adjust this value to change the thickness of the underline */
+    background-color: rgb(0,0,0); /* Adjust this value to change the color of the underline */
+    transition: width 0.3s ease; /* Adjust the transition timing and easing as needed */
+  }
+  
+  .navbar #get_in_touch:hover::after {
+    width: 100%;
+  }
+
+
+/* MAKE SOME OPTION THAT WILL HELP FOR THE CUSTOMER TO FIND THE THINGS */
+#logo{
+    width: 80px;
+    height: 80px;
+    background-image: url(/Image/logo_real.avif);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top:10px;
+    left: 635px;
+
+}
+
+
+#home{
+    color: rgba(255,255,255,0.9);
+    position:absolute;
+    top:120px;
+    left:380px;
+    font-weight: bold;
+    text-decoration: none;
+  cursor: pointer;
+
+    
+}
+
+#shop_all{
+    color: rgba(255,255,255,0.9);
+    position:absolute;
+    top:120px;
+    left:490px;
+    font-weight: bold;
+    text-decoration: none;
+  cursor: pointer;
+}
+
+#men{
+    color: rgba(255,255,255,0.9);
+    position:absolute;
+    top:120px;
+    left:590px;
+    font-weight: bold;
+    text-decoration: none;
+  cursor: pointer;
+    
+}
+
+#women{
+    color: rgba(255,255,255,0.9);
+    position:absolute;
+    top:120px;
+    left:690px;
+    font-weight: bold;
+    text-decoration: none;
+  cursor: pointer;
+    
+}
+
+
+#sale{
+    color: rgba(255,0,0,0.9);
+    position:absolute;
+    top:120px;
+    left:790px;
+    font-weight: bold;
+    text-decoration: none;
+  cursor: pointer;
+    
+}
+
+#rich_cotton{
+    color: rgba(255,255,255,0.9);
+    position:absolute;
+    top:120px;
+    left:870px;
+    font-weight: bold;
+    text-decoration: none;
+  cursor: pointer;
+    
+}
+
+#get_in_touch{
+    color: rgba(255,255,255,0.9);
+    position:absolute;
+    top:120px;
+    left:990px;
+    font-weight: bold;
+    text-decoration: none;
+  cursor: pointer;
+    
+}
+
+/* CREATING A NEW FLEX-BOX FFOR SEARCH OPTION THAT WHEN USER CLICK ON THIS IT CAN ACESS THE SEARCH OPTION  */
+.Search_container_flex {
+  display: flex; /* Use flexbox */
+  height: 3rem;
+  width: 35rem;
+  position: absolute;
+  top: 30px;
+  left: 40px;
+  cursor: pointer;
+}
+ 
+
+
+#search{
+  height:20px;
+  width: 20px;
+  background-image: url(/Image/search_icone.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  cursor: pointer;
+ 
+}
+
+
+#Heading{
+  position: absolute;
+  left: 40px;
+  top: 10px;
+  font-size: large;
+  color: rgba(255,255,255,0.5);
+  cursor: pointer;
+}
+
+/* NOW ANIMATION THE MAIN THUMBLNAIL LIKE A STATUS ON A WHATS APP  THAT THE IMAGE WILL CHANGE AFTER 2SEC TO ANOTHER IMAGE */
+
+.thumbnail{
+   display: flex;
+   width:1337px;
+   height: 800px; 
+   position:absolute;
+   top:37px; 
+}
+
+
+#thumbnail{
+  height: 680px;
+  width:1337px;
+  opacity: 1;
+}
+
+
+#thumbnail2{
+  height: 680px;
+  width:1340px;
+  position: absolute;
+  left:0rem;
+  opacity: 0;
+}
+
+
+.mood{
+  height: 1360rem;
+  background-color: white;
+}
+
+
+
+
+
+#slidebutoon_1 {
+  width: 0px;
+  height: 1px; /* Height added for demonstration */
+  position: absolute;
+  top: 130px;
+  left: 550px;
+  transition: width 3s linear;
+  border: 1px solid white;
+  z-index: 1;
+
+}
+
+#slidebutoon_2{
+  width:0%;
+  height: 1px;
+  position: absolute;
+  top: 130px;
+  left: 650px;
+  border-color:rgb(255,255,255);
+  transition: width 3s linear;
+  z-index: 1;
+}
+
+
+.stauts_check{
+  display: flex;
+  height: 164px;
+  width: 1340px;
+  position: absolute;
+  top: 35rem;
+
+}
+
+#hr1{
+  width:85px;
+  height: 0.5px;
+  position: absolute;
+  top: 130px;
+  left: 550px;
+  border-color: white;
+  opacity: 0.4;
+  
+}
+
+#hr2{
+  width:85px;
+  height: 0px;
+  position: absolute;
+  top: 130px;
+  left: 650px;
+  border-color:rgba(255,255,255,10);
+  background-color: white;
+  opacity: 0.4;
+}
+
+/* Styling a box that cointain products */
+
+#H1_box{
+  width:600px;
+  display: flex;
+  position: absolute;
+  top:47rem;
+  left:350px;
+  justify-content: center;
+}
+
+#H1{
+  font-size: 38px;
+}
+
+#container1{
+  display: flex;
+  width: 1339px;
+  height: 550.74px;
+  position: absolute;
+  top: 53rem;
+}
+
+.product1{
+  position: absolute;
+  top:5rem;
+ 
+  transition: top 0.6s ease;
+}
+
+
+
+#pr1{
+  height:431.8px;
+  width:287.87px;
+  position:absolute;
+  left:50px;
+  border-radius: 5px;
+}
+
+#pr1_hover{
+  height:431.8px;
+  width:287.87px;
+  position:absolute;
+  left:50px;
+  border-radius: 5px;
+
+}
+
+#pr1_cn{
+  font-size: 16px;
+  font-weight: 400;
+  position:absolute;
+  left:70px;
+  top:28rem;
+  text-decoration: none;
+  color: black;
+}
+
+#pr1_cn:hover{
+  opacity: 0.5;
+}
+
+.price_pr1{
+  font-size: 16px;
+  position: absolute;
+  top:30rem;
+  left:150px;
+}
+
+
+/* Styling product2 */
+
+.product2{
+  position: absolute;
+  top:5rem;
+ 
+  transition: top 0.68s ease;
+}
+
+#pr2,#pr2_hover{
+  height:431.8px;
+  width:287.87px;
+  position:absolute;
+  left:390px;
+  background-color: black;
+  border-radius: 5px;
+}
+
+
+
+#pr2_cn{
+  font-size: 16px;
+  font-weight: 400;
+  position:absolute;
+  left:390px;
+  top:28rem;
+  text-decoration: none;
+  color: black;
+}
+
+#pr2_cn:hover{
+  opacity: 0.5;
+}
+
+.price_pr2{
+  font-size: 16px;
+  position: absolute;
+  top:30rem;
+  left:470px;
+}
+
+/*Styling prodeuct 3*/
+
+.product3{
+  position: absolute;
+  top:5rem;
+  left: 0px;
+  transition: top 0.78s ease;
+}
+
+#pr3,#pr3_hover{
+  height:431.8px;
+  width:287.87px;
+  position:absolute;
+  left:690px;
+  background-color: black;
+ 
+  border-radius: 5px;
+}
+
+
+
+
+
+#pr3_cn{
+  font-size: 16px;
+  font-weight: 400;
+  position:absolute;
+  left:710px;
+  top:28rem;
+  text-decoration: none;
+  color: black;
+}
+
+#pr3_cn:hover{
+  opacity: 0.5;
+}
+
+.price_pr3{
+  font-size: 16px;
+  position: absolute;
+  top:30rem;
+  left:800px;
+}
+
+/*Styling prodeuct 4*/
+.product4{
+  position: absolute;
+  top:5rem;
+  /* left: 1010px; */
+  transition: top 0.88s ease;
+}
+
+#pr4,#pr4_hover{
+  height:431.8px;
+  width:287.87px;
+  position:absolute;
+  left:1010px;
+  border-radius: 5px;
+  background-color: black;
+}
+
+#pr4_cn{
+  font-size: 16px;
+  font-weight: 400;
+  position:absolute;
+  left:1010px;
+  top:28rem;
+  text-decoration: none;
+  color: black;
+}
+
+#pr4_cn:hover{
+  opacity: 0.5;
+}
+
+.price_pr4{
+  font-size: 16px;
+  position: absolute;
+  top:30rem;
+  left:1120px;
+}
+
+
+/*Making the box that contain every product size */
+
+.pr1_stock{
+  width: 295.25px;
+  height: 60px;
+  
+  position: absolute;
+  top:32rem;
+  left: 70px;
+}
+
+/*stcks style for product 1 */
+
+
+#pr1_xs{
+  font-size: 20px;
+  height: 35px;
+  width: 42.5px;
+  color:black;
+  text-decoration: none;
+  border: 2px solid rgba(211, 211, 211,0.9);
+  padding: 10px;
+}
+#pr1_s{
+  font-size: 20px;
+  height: 35px;
+  width: 42.5px;
+  color:black;
+  text-decoration: none;
+  border: 2px solid rgba(211, 211, 211,0.9);
+  padding: 10px;
+}
+#pr1_m{
+  font-size: 20px;
+  height: 35px;
+  width: 42.5px;
+  color:black;
+  text-decoration: none;
+  border: 2px solid rgba(211, 211, 211,0.9);
+  padding: 10px;
+}
+#pr1_l{  font-size: 20px;
+  height: 35px;
+  width: 42.5px;
+  color:black;
+  text-decoration: none;
+  border: 2px solid rgba(211, 211, 211,0.9);
+  padding: 10px;}
+#pr1_xl{
+  font-size: 20px;
+  height: 35px;
+  width: 42.5px;
+  color:black;
+  text-decoration: none;
+  border: 2px solid rgba(211, 211, 211,0.9);
+  padding: 10px;
+}
+#pr1_xxl{
+  font-size: 20px;
+  height: 35px;
+  width: 42.5px;
+  color:black;
+  text-decoration: none;
+  border: 2px solid rgba(211, 211, 211,0.9);
+  padding: 10px;
+}
+
+
+/*stcks style for product 2 */
+.pr2_stock{
+  width: 295.25px;
+  height: 60px;
+  
+  position: absolute;
+  top:32rem;
+  left: 390px;
+}
+
+#pr2_xs{
+  font-size: 20px;
+  height: 35px;
+  width: 42.5px;
+  color:black;
+  text-decoration: none;
+  border: 2px solid rgba(211, 211, 211,0.9);
+  padding: 10px;
+}
+#pr2_s{
+  font-size: 20px;
+  height: 35px;
+  width: 42.5px;
+  color:black;
+  text-decoration: none;
+  border: 2px solid rgba(211, 211, 211,0.9);
+  padding: 10px;
+}
+#pr2_m{
+  font-size: 20px;
+  height: 35px;
+  width: 42.5px;
+  color:black;
+  text-decoration: none;
+  border: 2px solid rgba(211, 211, 211,0.9);
+  padding: 10px;
+}
+#pr2_l{
+  font-size: 20px;
+  height: 35px;
+  width: 42.5px;
+  color:black;
+  text-decoration: none;
+  border: 2px solid rgba(211, 211, 211,0.9);
+  padding: 10px;
+}
+#pr2_xl{
+  font-size: 20px;
+  height: 35px;
+  width: 42.5px;
+  color:black;
+  text-decoration: none;
+  border: 2px solid rgba(211, 211, 211,0.9);
+  padding: 10px;
+}
+#pr2_xxl{
+  font-size: 20px;
+  height: 35px;
+  width: 42.5px;
+  color:black;
+  text-decoration: none;
+  border: 2px solid rgba(211, 211, 211,0.9);
+  padding: 10px;
+}
+
+/*stocks style for product 3 */
+
+
+.pr3_stock{
+  width: 295.25px;
+  height: 60px;
+  
+  position: absolute;
+  top:32rem;
+  left: 710px;
+}
+
+#pr3_xs{
+  font-size: 20px;
+  height: 35px;
+  width: 42.5px;
+  color:black;
+  text-decoration: none;
+  border: 2px solid rgba(211, 211, 211,0.9);
+  padding: 10px;
+}
+#pr3_s{
+  font-size: 20px;
+  height: 35px;
+  width: 42.5px;
+  color:black;
+  text-decoration: none;
+  border: 2px solid rgba(211, 211, 211,0.9);
+  padding: 10px;
+}
+#pr3_m{
+  font-size: 20px;
+  height: 35px;
+  width: 42.5px;
+  color:black;
+  text-decoration: none;
+  border: 2px solid rgba(211, 211, 211,0.9);
+  padding: 10px;
+}
+#pr3_l{
+  font-size: 20px;
+  height: 35px;
+  width: 42.5px;
+  color:black;
+  text-decoration: none;
+  border: 2px solid rgba(211, 211, 211,0.9);
+  padding: 10px;
+}
+#pr3_xl{
+  font-size: 20px;
+  height: 35px;
+  width: 42.5px;
+  color:black;
+  text-decoration: none;
+  border: 2px solid rgba(211, 211, 211,0.9);
+  padding: 10px;
+}
+#pr3_xxl{
+  font-size: 20px;
+  height: 35px;
+  width: 42.5px;
+  color:black;
+  text-decoration: none;
+  border: 2px solid rgba(211, 211, 211,0.9);
+  padding: 10px;
+}
+
+/*stcks style for product 4 */
+
+.pr4_stock{
+  width: 293.25px;
+  height: 60px;
+  position: absolute;
+  top:32rem;
+  left: 1050px;
+}
+#pr4_xs{
+  font-size: 20px;
+  height: 35px;
+  width: 42.5px;
+  color:black;
+  text-decoration: none;
+  border: 2px solid rgba(211, 211, 211,0.9);
+  padding: 10px;
+}
+#pr4_s{
+  font-size: 20px;
+  height: 35px;
+  width: 42.5px;
+  color:black;
+  text-decoration: none;
+  border: 2px solid rgba(211, 211, 211,0.9);
+  padding: 10px;
+}
+#pr4_m{
+  font-size: 20px;
+  height: 35px;
+  width: 42.5px;
+  color:black;
+  text-decoration: none;
+  border: 2px solid rgba(211, 211, 211,0.9);
+  padding: 10px;
+}
+#pr4_l{
+  font-size: 20px;
+  height: 35px;
+  width: 42.5px;
+  color:black;
+  text-decoration: none;
+  border: 2px solid rgba(211, 211, 211,0.9);
+  padding: 10px;
+}
+#pr4_xl{
+  font-size: 20px;
+  height: 35px;
+  width: 42.5px;
+  color:black;
+  text-decoration: none;
+  border: 2px solid rgba(211, 211, 211,0.9);
+  padding: 10px;
+}
+#pr4_xxl{
+  font-size: 20px;
+  height: 35px;
+  width: 42.5px;
+  color:black;
+  text-decoration: none;
+  border: 2px solid rgba(211, 211, 211,0.9);
+  padding: 10px;
+}
+
+
+
+/*Now make the secod box that contain the product  it is  same as above */
+
+#h2{
+  font-size: 50px;
+  position:absolute;
+  top:40rem;
+  left:400px
+}
+
+#use_code{
+  position:absolute;
+  top:45rem;
+  left:600px
+}
+
+.container2{
+   display: flex;
+   height:450px;
+   width: 1340px;
+   position:absolute;
+   top: 50rem;
+  
+}
+
+/*product1*/
+.product1_cn{
+  position: absolute;
+  top:5rem;
+  left: 0px;
+  transition: top 0.6s ease;
+}
+
+
+
+
+#p2_p1,#pr2_p1_hover{
+  height: 306px;
+  width: 306px;
+  position: absolute;
+  top:0;
+  left:50px;
+  border-radius: 5px;
+}
+
+#mn_pr1_nm{
+  color:black;
+  text-decoration: none;
+  position: absolute;
+  top: 21rem;
+  left: 100px;
+}
+
+#mn_pr1_nm:hover{
+  opacity:0.5;
+}
+
+#mn_pr1_prc{
+  position:absolute;
+  left:150px;
+  top:23rem;
+}
+
+/*Making stock information of container 2 product 1*/
+.cn2_pr1_stck{
+  height: 100px;
+  width: 290px;
+  position:absolute;
+  top:26rem;
+  left:60px;
+}
+
+
+#mn_pr1_xs,#mn_pr1_s,#mn_pr1_m,#mn_pr1_l,#mn_pr1_xl,#mn_pr1_xxl{
+  font-size: 20px;
+  text-decoration: none;
+  color:black;
+  border: 2px solid rgba(211, 211, 211,0.9);
+  padding: 10px;
+}
+
+
+
+/*product2*/
+
+.product2_cn{
+  position: absolute;
+  top:5rem;
+  left: 0px;
+  transition: top 0.68s ease;
+}
+
+
+
+#p2_p2,#pr2_p2_hover{
+  height: 306px;
+  width: 306px;
+  position: absolute;
+  top:0;
+  left:380px;
+  border-radius: 5px;
+}
+
+#mn_pr2_nm{
+  color:black;
+  text-decoration: none;
+  position: absolute;
+  top: 21rem;
+  left: 430px;
+}
+
+#mn_pr2_nm:hover{
+  opacity:0.5;
+}
+
+#mn_pr2_prc{
+  position:absolute;
+  left:480px;
+  top:23rem; 
+}
+
+/*Making stock information of container 2 product 2*/
+.cn2_pr2_stck{
+  height: 100px;
+  width: 290px;
+  position:absolute;
+  top:26rem;
+  left:385px;
+}
+
+
+#mn_pr2_xs,#mn_pr2_s,#mn_pr2_m,#mn_pr2_l,#mn_pr2_xl,#mn_pr2_xxl{
+  font-size: 20px;
+  text-decoration: none;
+  color:black;
+  border: 2px solid rgba(211, 211, 211,0.9);
+  padding: 10px;
+}
+
+
+/*For product 3*/
+
+.product3_cn{
+  position: absolute;
+  top:5rem;
+  left: 0px;
+  transition: top 0.78s ease;
+  opacity: 0;
+}
+
+#p2_p3,#pr2_p3_hover{
+  height: 306px;
+  width: 306px;
+  position: absolute;
+  top:0;
+  left:700px;
+  border-radius: 5px;
+}
+
+#mn_pr3_nm{
+  color:black;
+  text-decoration: none;
+  position: absolute;
+  top: 21rem;
+  left:760px;
+}
+
+#mn_pr3_nm:hover{
+  opacity:0.5;
+}
+
+#mn_pr3_prc{
+  position:absolute;
+  left:810px;
+  top:23rem; 
+}
+
+/*Making stock information of container 2 product 3*/
+.cn2_pr3_stck{
+  height: 100px;
+  width: 290px;
+  position:absolute;
+  top:26rem;
+  left:700px;
+}
+
+
+#mn_pr3_xs,#mn_pr3_s,#mn_pr3_m,#mn_pr3_l,#mn_pr3_xl,#mn_pr3_xxl{
+  font-size: 20px;
+  text-decoration: none;
+  color:black;
+  border: 2px solid rgba(211, 211, 211,0.9);
+  padding: 10px;
+}
+
+/*For product 4 */
+
+.product4_cn{
+  position: absolute;
+  top:5rem;
+  left: 0px;
+  transition: top 0.88s ease;
+}
+
+
+#p2_p4,#pr2_p4_hover{
+  height: 306px;
+  width: 306px;
+  position: absolute;
+  top:0;
+  left:1030px;
+  border-radius: 5px;
+}
+
+#mn_pr4_nm{
+  color:black;
+  text-decoration: none;
+  position: absolute;
+  top: 21rem;
+  left:1090px;
+}
+
+#mn_pr4_nm:hover{
+  opacity:0.5;
+}
+
+#mn_pr4_prc{
+  position:absolute;
+  left:1150px;
+  top:23rem; 
+}
+
+/*Making stock information of container 2 product 3*/
+.cn2_pr4_stck{
+  height: 100px;
+  width: 290px;
+  position:absolute;
+  top:26rem;
+  left:1030px;
+}
+
+
+#mn_pr4_xs,#mn_pr4_s,#mn_pr4_m,#mn_pr4_l,#mn_pr4_xl,#mn_pr4_xxl{
+  font-size: 20px;
+  text-decoration: none;
+  color:black;
+  border: 2px solid rgba(211, 211, 211,0.9);
+  padding: 10px;
+}
+
+
+/*In this part we are going to style the click box*/
+
+
+.click_box{
+  position: absolute;
+  top:138rem;
+  
+  height: 500px;
+  width: 1340px;
+}
+
+
+/*In this part we are going to style the component click box*/
+
+
+/*WE are styling the click options*/
+   #option1{
+     font-size: 15px;
+     font-weight: 800;
+     opacity: 1;
+    position:absolute;
+    left:500px;
+    cursor: pointer;
+}
+
+
+#option2{
+  font-size: 15px;
+  font-weight: 800;
+  opacity: 0.6;
+ position:absolute;
+ left:595px;
+ cursor: pointer;
+
+ 
+}
+
+#option3{
+  font-size: 15px;
+  font-weight: 800;
+  opacity: 0.6;
+ position:absolute;
+ left:700px;
+ cursor: pointer;
+
+}
+
+/*styling the hr tag*/
+
+#opt_hr{
+  width: 260px;
+  position: absolute;
+  left: 500px;
+  top: 40px;
+  opacity: 0.4;
+}
+
+
+/*The upper part is ready now to make a line under the selected option*/
+
+#option_ch_hr{
+  width: 70px;
+  border: 2px solid black;
+  position: absolute;
+  left: 500px;
+  top: 40px;
+  transition: left 0.9s ease;
+}
+
+
+/*AT this time we are going to make the product ifo contaier*/
+
+#opt1_pr1_rl{
+  position: absolute;
+  top:100px;
+  left: 250px;
+  width:200px;
+  height: 300.82px;
+  border-radius: 5px;
+  opacity: 1;
+  transition: opacity 0.6s ease;
+}
+
+#opt1_pr1_hv{
+  position: absolute;
+  top:100px;
+  left: 250px;
+  width:200px;
+  height: 300.82px;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+
+
+#opt1_pr2_rl{
+  position: absolute;
+  top:100px;
+  left: 480px;
+  width:200px;
+  height: 300.82px;
+  border-radius: 5px;
+  transition: opacity 0.6s ease;
+
+}
+
+#opt1_pr2_hv{
+  position: absolute;
+  top:100px;
+  left: 480px;
+  width:200px;
+  height: 300.82px;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+
+}
+#opt1_pr3_rl{
+  position: absolute;
+  top:100px;
+  left: 710px;
+  width:200px;
+  height: 300.82px;
+  border-radius: 5px;
+  transition: opacity 0.6s ease;
+
+}
+
+#opt1_pr3_hv{
+  position: absolute;
+  top:100px;
+  left: 710px;
+  width:200px;
+  height: 300.82px;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+
+}
+#opt1_pr4_rl{
+  position: absolute;
+  top:100px;
+  left: 940px;
+  width:200px;
+  height: 300.82px;
+  border-radius: 5px;
+  transition: opacity 0.6s ease;
+
+}
+
+#opt1_pr4_hv{
+  position: absolute;
+  top:100px;
+  left: 940px;
+  width:200px;
+  height: 300.82px;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+
+}
+
+
+/*Now we are making the box that contain the product info*/
+.T-shirt_pr1{
+  position:absolute;
+  top:25rem;
+  background-color: black;
+  width: 1340px;
+  height: 10px;
+}
+
+
+/*Making the stock style for product 1 */
+
+/*stcks style for product 1 */
+
+
+.T-shirt_pr1_stc{
+  position: absolute;
+  top: 32rem;
+  left:250px;
+  height: 35px;
+  width: 300px;
+}
+#T-shirt_pr1_s,#T-shirt_pr1_xs,#T-shirt_pr1_m,#T-shirt_pr1_l,#T-shirt_pr1_xl{
+  font-size: 20px;
+  height: 35px;
+  width: 42.5px;
+  color:black;
+  text-decoration: none;
+  border: 2px solid rgba(211, 211, 211,0.9);
+  padding: 10px;
+}
+
+#T-shirt_pr1_xxl{
+  font-size: 20px;
+  height: 20px;
+  width: 39px;
+  color:black;
+  text-decoration: none;
+  border: 2px solid rgba(211, 211, 211,0.9);
+  padding: 10px;
+  position: absolute;
+  top:40px;
+  left:70px;
+}
+
+#T-shirt_pr1_nme{
+  color:black;
+  text-decoration: none;
+  position: absolute;
+  top: 26rem;
+  left: 260px;
+}
+
+#T-shirt_pr1_nme:hover{
+  opacity:0.5;
+}
+
+#T-shirt_pr1_prc{
+  position:absolute;
+  left:300px;
+  top:29rem; 
+}
+
+
+
+
+/*Making the stock style for product 2*/
+
+/*stcks style for product 2 */
+
+
+.T-shirt_pr2_stc{
+  position: absolute;
+  top: 32rem;
+  left:480px;
+  height: 35px;
+  width: 300px;
+}
+#T-shirt_pr2_s,#T-shirt_pr2_xs,#T-shirt_pr2_m,#T-shirt_pr2_l,#T-shirt_pr2_xl{
+  font-size: 20px;
+  height: 35px;
+  width: 39px;
+  color:black;
+  text-decoration: none;
+  border: 2px solid rgba(211, 211, 211,0.9);
+  padding: 10px;
+}
+
+#T-shirt_pr2_xxl{
+  font-size: 20px;
+  height: 20px;
+  width: 39px;
+  color:black;
+  text-decoration: none;
+  border: 2px solid rgba(211, 211, 211,0.9);
+  padding: 10px;
+  position: absolute;
+  top:40px;
+  left:70px;
+}
+
+#T-shirt_pr2_nme{
+  color:black;
+  text-decoration: none;
+  position: absolute;
+  top: 26rem;
+  left: 480px;
+}
+
+#T-shirt_pr2_nme:hover{
+  opacity:0.5;
+}
+
+#T-shirt_pr2_prc{
+  position:absolute;
+  left:550px;
+  top:29rem; 
+}
+
+
+
+
+
+/*Making the stock style for product 3 */
+
+/*stcks style for product 3 */
+
+
+.T-shirt_pr3_stc{
+  position: absolute;
+  top: 32rem;
+  left:710px;
+  height: 35px;
+  width: 300px;
+}
+#T-shirt_pr3_s,#T-shirt_pr3_xs,#T-shirt_pr3_m,#T-shirt_pr3_l,#T-shirt_pr3_xl{
+  font-size: 19px;
+  height: 35px;
+  width: 42.5px;
+  color:black;
+  text-decoration: none;
+  border: 2px solid rgba(211, 211, 211,0.9);
+  padding: 9px;
+}
+
+#T-shirt_pr3_xxl{
+  font-size: 20px;
+  height: 20px;
+  width: 39px;
+  color:black;
+  text-decoration: none;
+  border: 2px solid rgba(211, 211, 211,0.9);
+  padding: 10px;
+  position: absolute;
+  top:40px;
+  left:70px;
+}
+
+#T-shirt_pr3_nme{
+  color:black;
+  text-decoration: none;
+  position: absolute;
+  top: 26rem;
+  left: 720px;
+}
+
+#T-shirt_pr3_nme:hover{
+  opacity:0.5;
+}
+
+#T-shirt_pr3_prc{
+  position:absolute;
+  left:790px;
+  top:29rem; 
+}
+
+
+
+
+
+
+/*For product 4*/
+.T-shirt_pr4_stc{
+  position: absolute;
+  top: 32rem;
+  left:920px;
+  height: 35px;
+  width: 300px;
+}
+
+#T-shirt_pr4_s,#T-shirt_pr4_xs,#T-shirt_pr4_m,#T-shirt_pr4_l,#T-shirt_pr4_xl{
+  font-size: 20px;
+  height: 35px;
+  width: 42.5px;
+  color:black;
+  text-decoration: none;
+  border: 2px solid rgba(211, 211, 211,0.9);
+  padding: 10px;
+}
+
+#T-shirt_pr4_xxl{
+  font-size: 20px;
+  height: 20px;
+  width: 39px;
+  color:black;
+  text-decoration: none;
+  border: 2px solid rgba(211, 211, 211,0.9);
+  padding: 10px;
+  position: absolute;
+  top:40px;
+  left:70px;
+}
+
+#T-shirt_pr4_nme{
+  color:black;
+  text-decoration: none;
+  position: absolute;
+  top: 26rem;
+  left: 950px;
+}
+
+#T-shirt_pr4_nme:hover{
+  opacity:0.5;
+}
+
+#T-shirt_pr4_prc{
+  position:absolute;
+  left:990px;
+  top:29rem; 
+}
+
+
+/*Try to make a best hover effect without using Javascript*/
+#Tshirt_pr1_fl:hover{
+        #opt1_pr1_rl{opacity: 0;}
+
+        #opt1_pr1_hv{
+          opacity: 1;
+        }
+}
+
+
+#Tshirt_pr2_fl:hover{
+  #opt1_pr2_rl{opacity: 0;}
+
+  #opt1_pr2_hv{
+    opacity: 1;
+  }
+}
+
+
+#Tshirt_pr3_fl:hover{
+  #opt1_pr3_rl{opacity: 0;}
+
+  #opt1_pr3_hv{
+    opacity: 1;
+  }
+}
+
+
+
+#Tshirt_pr4_fl:hover{
+  #opt1_pr2_rl{opacity: 0;}
+
+  #opt1_pr4_hv{
+    opacity: 1;
+  }
+}
+
+/*Giving height to the t-shrt section*/
+.T-shirt{
+  position: relative;
+  top: 0;
+  opacity: 1;
+
+}
+
+/* We are increasing the positions to the bottom for transition effect */
+
+#Tshirt_pr1_fl{
+  position: relative;
+  top: 20px;
+  opacity: 0;
+  transition: top 0.6s ease,opacity 1s ease ;
+}
+
+
+#Tshirt_pr2_fl{
+  position: relative;
+  top: 20px;
+  opacity: 0;
+  transition: top 0.68s ease,opacity 1.78s ease ;
+}
+
+#Tshirt_pr3_fl{
+  position: relative;
+  top: 20px; 
+  opacity: 0;
+  transition: top 0.78s ease,opacity 1.88s ease ;
+}
+
+#Tshirt_pr4_fl{
+  position: relative;
+  top: 20px;
+  opacity: 0;
+  transition: top 0.88s ease,opacity 1.98s ease ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
