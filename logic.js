@@ -123,7 +123,7 @@ if (scroll >= max_length) {
     navbar.classList.remove('hover');
 } else {
     navbar.style.top = "2rem"; // Reset position to static when scrolling back up
-    navbar.style.backgroundColor = "transparent"; // Reset background color
+    navbar.style.backgroundColor = "white"; // Reset background color
     logo.style.backgroundImage = "url(/Image/logo_real.avif)";
     logo.style.height = "80px";
     logo.style.width = "80px";
