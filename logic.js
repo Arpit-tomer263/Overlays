@@ -144,7 +144,7 @@ if (scroll >= max_length) {
     search.style.left = "0px";
 
     // Removing hover effect from navbar
-    navbar.classList.remove('hover');
+    navbar.classList.add('hover');
 
 
 
@@ -154,7 +154,7 @@ if (scroll >= max_length) {
   navbar.addEventListener('mouseenter', function() {
   // Apply hover effect styles when mouse enters the navbar
   navbar.style.transition = 'background-color 0.5s ease 0.001s';
-  navbar.style.backgroundColor = 'White';
+  navbar.style.backgroundColor = 'transparent';
 
   search.style.backgroundImage = 'url(/Image/Search_new.png)';
   search.style.width = '25px';
