@@ -144,7 +144,7 @@ if (scroll >= max_length) {
     search.style.left = "0px";
 
     // Removing hover effect from navbar
-    navbar.classList.remove('hover');
+    navbar.classList.add('hover');
 
 
 
