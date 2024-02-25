@@ -56,6 +56,10 @@ const t_shirts = document.querySelector("#option1")
 const joggers = document.querySelector("#option2")
 const shirts = document.querySelector("#option3")
 const t_shirts_dis = document.querySelector(".T-shirt")
+const joggers_dis = document.querySelector(".Joggers")
+const shirts_dis = document.querySelector(".shirts")
+
+
 
 
 
@@ -730,13 +734,24 @@ if(curnt_hg>cn3_hg){
 }
 }
 )
-
+joggers_dis.style.display = "none";
+shirts_dis.style.display = 'none';
 //Making that when user click on this options the image will again toggle
 joggers.addEventListener("click",()=>{
   t_shirts_dis.style.display = "none";
+  joggers_dis.style.display = "block";
+  shirts_dis.style.display = 'none';
 })
 
 t_shirts.addEventListener("click",()=>{
-  t_shirts_dis.style.display = "block";
+  t_shirts_dis.style.display = "";
+  joggers_dis.style.display = "none";
+  shirts_dis.style.display = 'none';
+})
+
+shirts.addEventListener("click", ()=>{
+  shirts_dis.style.display = '';
+  t_shirts_dis.style.display = "none";
+  joggers_dis.style.display = "none";
 })
 

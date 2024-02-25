@@ -1186,7 +1186,7 @@
 
 /*AT this time we are going to make the product ifo contaier*/
 
-#opt1_pr1_rl{
+#opt1_pr1_rl,#opt2_pr1_rl{
   position: absolute;
   top:100px;
   left: 250px;
@@ -1197,7 +1197,7 @@
   transition: opacity 0.6s ease;
 }
 
-#opt1_pr1_hv{
+#opt1_pr1_hv,#opt2_pr1_hv{
   position: absolute;
   top:100px;
   left: 250px;
@@ -1210,7 +1210,7 @@
 
 
 
-#opt1_pr2_rl{
+#opt1_pr2_rl,#opt2_pr2_rl{
   position: absolute;
   top:100px;
   left: 480px;
@@ -1221,7 +1221,7 @@
 
 }
 
-#opt1_pr2_hv{
+#opt1_pr2_hv,#opt2_pr2_hv{
   position: absolute;
   top:100px;
   left: 480px;
@@ -1232,7 +1232,7 @@
   transition: opacity 0.6s ease;
 
 }
-#opt1_pr3_rl{
+#opt1_pr3_rl,#opt2_pr3_rl{
   position: absolute;
   top:100px;
   left: 710px;
@@ -1243,7 +1243,13 @@
 
 }
 
-#opt1_pr3_hv{
+
+
+
+
+
+
+#opt1_pr3_hv,#opt2_pr3_hv{
   position: absolute;
   top:100px;
   left: 710px;
@@ -1252,9 +1258,8 @@
   border-radius: 5px;
   opacity: 0;
   transition: opacity 0.6s ease;
-
 }
-#opt1_pr4_rl{
+#opt1_pr4_rl,#opt2_pr4_rl{
   position: absolute;
   top:100px;
   left: 940px;
@@ -1265,7 +1270,7 @@
 
 }
 
-#opt1_pr4_hv{
+#opt1_pr4_hv,#opt2_pr4_hv{
   position: absolute;
   top:100px;
   left: 940px;
@@ -1293,14 +1298,21 @@
 /*stcks style for product 1 */
 
 
-.T-shirt_pr1_stc{
+.T-shirt_pr1_stc,.Joggers_pr1_stc{
   position: absolute;
   top: 32rem;
   left:250px;
   height: 35px;
   width: 300px;
 }
-#T-shirt_pr1_s,#T-shirt_pr1_xs,#T-shirt_pr1_m,#T-shirt_pr1_l,#T-shirt_pr1_xl{
+
+.Joggers_pr1_stc{
+  position: absolute;
+  top: 31rem;
+  left:240px;
+  height: 35px;
+  width: 300px;}
+#T-shirt_pr1_s,#T-shirt_pr1_xs,#T-shirt_pr1_m,#T-shirt_pr1_l,#T-shirt_pr1_xl,/**/#Joggers_pr1_s,#Joggers_pr1_xs,#Joggers_pr1_m,#Joggers_pr1_l,#Joggers_pr1_xl{
   font-size: 20px;
   height: 35px;
   width: 42.5px;
@@ -1310,7 +1322,7 @@
   padding: 10px;
 }
 
-#T-shirt_pr1_xxl{
+#T-shirt_pr1_xxl,#Joggers_pr1_xxl{
   font-size: 20px;
   height: 20px;
   width: 39px;
@@ -1323,7 +1335,7 @@
   left:70px;
 }
 
-#T-shirt_pr1_nme{
+#T-shirt_pr1_nme,#Joggers_pr1_nme{
   color:black;
   text-decoration: none;
   position: absolute;
@@ -1334,13 +1346,19 @@
 #T-shirt_pr1_nme:hover{
   opacity:0.5;
 }
-
+#Joggers_pr1_nme:hover{
+  opacity:0.5;
+}
 #T-shirt_pr1_prc{
   position:absolute;
   left:300px;
   top:29rem; 
 }
-
+#Joggers_pr1_prc{
+  position:absolute;
+  left:300px;
+  top:28rem; 
+}
 
 
 
@@ -1356,7 +1374,15 @@
   height: 35px;
   width: 300px;
 }
-#T-shirt_pr2_s,#T-shirt_pr2_xs,#T-shirt_pr2_m,#T-shirt_pr2_l,#T-shirt_pr2_xl{
+
+.Joggers_pr2_stc{
+  position: absolute;
+  top: 31rem;
+  left:480px;
+  height: 35px;
+  width: 300px;
+}
+#T-shirt_pr2_s,#T-shirt_pr2_xs,#T-shirt_pr2_m,#T-shirt_pr2_l,#T-shirt_pr2_xl/**/,#Joggers_pr2_s,#Joggers_pr2_xs,#Joggers_pr2_m,#Joggers_pr2_l,#Joggers_pr2_xl{
   font-size: 20px;
   height: 35px;
   width: 39px;
@@ -1366,7 +1392,7 @@
   padding: 10px;
 }
 
-#T-shirt_pr2_xxl{
+#T-shirt_pr2_xxl,#Joggers_pr2_xxl{
   font-size: 20px;
   height: 20px;
   width: 39px;
@@ -1379,7 +1405,7 @@
   left:70px;
 }
 
-#T-shirt_pr2_nme{
+#T-shirt_pr2_nme,#Joggers_pr2_nme{
   color:black;
   text-decoration: none;
   position: absolute;
@@ -1390,8 +1416,10 @@
 #T-shirt_pr2_nme:hover{
   opacity:0.5;
 }
-
-#T-shirt_pr2_prc{
+#Joggers_pr2_nme:hover{
+  opacity:0.5;
+}
+#T-shirt_pr2_prc,#Joggers_pr2_prc{
   position:absolute;
   left:550px;
   top:29rem; 
@@ -1413,7 +1441,15 @@
   height: 35px;
   width: 300px;
 }
-#T-shirt_pr3_s,#T-shirt_pr3_xs,#T-shirt_pr3_m,#T-shirt_pr3_l,#T-shirt_pr3_xl{
+
+.Joggers_pr3_stc{
+  position: absolute;
+  top: 31rem;
+  left:710px;
+  height: 35px;
+  width: 300px;
+}
+#T-shirt_pr3_s,#T-shirt_pr3_xs,#T-shirt_pr3_m,#T-shirt_pr3_l,#T-shirt_pr3_xl/**/,#Joggers_pr3_s,#Joggers_pr3_xs,#Joggers_pr3_m,#Joggers_pr3_l,#Joggers_pr3_xl{
   font-size: 19px;
   height: 35px;
   width: 42.5px;
@@ -1423,7 +1459,7 @@
   padding: 9px;
 }
 
-#T-shirt_pr3_xxl{
+#T-shirt_pr3_xxl,#Joggers_pr3_xxl{
   font-size: 20px;
   height: 20px;
   width: 39px;
@@ -1436,7 +1472,7 @@
   left:70px;
 }
 
-#T-shirt_pr3_nme{
+#T-shirt_pr3_nme,#Joggers_pr3_nme{
   color:black;
   text-decoration: none;
   position: absolute;
@@ -1447,13 +1483,20 @@
 #T-shirt_pr3_nme:hover{
   opacity:0.5;
 }
-
-#T-shirt_pr3_prc{
+#Joggers_pr3_nme:hover{
+  opacity:0.5;
+}
+#T-shirt_pr3_prc,#Joggers_pr3_prc{
   position:absolute;
   left:790px;
   top:29rem; 
 }
 
+#Joggers_pr3_prc{
+  position:absolute;
+  left:790px;
+  top:28rem; 
+}
 
 
 
@@ -1468,7 +1511,15 @@
   width: 300px;
 }
 
-#T-shirt_pr4_s,#T-shirt_pr4_xs,#T-shirt_pr4_m,#T-shirt_pr4_l,#T-shirt_pr4_xl{
+.Joggers_pr4_stc{
+  position: absolute;
+  top: 31rem;
+  left:930px;
+  height: 35px;
+  width: 300px;
+}
+
+#T-shirt_pr4_s,#T-shirt_pr4_xs,#T-shirt_pr4_m,#T-shirt_pr4_l,#T-shirt_pr4_xl/**/,#Joggers_pr4_s,#Joggers_pr4_xs,#Joggers_pr4_m,#Joggers_pr4_l,#Joggers_pr4_xl{
   font-size: 20px;
   height: 35px;
   width: 42.5px;
@@ -1478,7 +1529,7 @@
   padding: 10px;
 }
 
-#T-shirt_pr4_xxl{
+#T-shirt_pr4_xxl,#Joggers_pr4_xxl{
   font-size: 20px;
   height: 20px;
   width: 39px;
@@ -1499,7 +1550,18 @@
   left: 950px;
 }
 
+#Joggers_pr4_nme{
+  color:black;
+  text-decoration: none;
+  position: absolute;
+  top: 26rem;
+  left: 970px;
+}
+
 #T-shirt_pr4_nme:hover{
+  opacity:0.5;
+}
+#Joggers_pr4_nme:hover{
   opacity:0.5;
 }
 
@@ -1508,7 +1570,11 @@
   left:990px;
   top:29rem; 
 }
-
+#Joggers_pr4_prc{
+  position:absolute;
+  left:990px;
+  top:28rem; 
+}
 
 /*Try to make a best hover effect without using Javascript*/
 #Tshirt_pr1_fl:hover{
@@ -1519,7 +1585,36 @@
         }
 }
 
+#Joggers_pr1_fl:hover{
+  #opt2_pr1_rl{opacity: 0;}
 
+  #opt2_pr1_hv{
+    opacity: 1;
+  }
+}
+
+#Joggers_pr2_fl:hover{
+  #opt2_pr2_rl{opacity: 0;}
+
+  #opt2_pr2_hv{
+    opacity: 1;
+  }
+}
+#Joggers_pr3_fl:hover{
+  #opt2_pr3_rl{opacity: 0;}
+
+  #opt2_pr3_hv{
+    opacity: 1;
+  }
+}
+
+#Joggers_pr4_fl:hover{
+  #opt2_pr4_rl{opacity: 0;}
+
+  #opt2_pr4_hv{
+    opacity: 1;
+  }
+}
 #Tshirt_pr2_fl:hover{
   #opt1_pr2_rl{opacity: 0;}
 
@@ -1530,7 +1625,8 @@
 
 
 #Tshirt_pr3_fl:hover{
-  #opt1_pr3_rl{opacity: 0;}
+  #opt1_pr3_rl{
+    opacity: 0;}
 
   #opt1_pr3_hv{
     opacity: 1;
@@ -1546,6 +1642,11 @@
     opacity: 1;
   }
 }
+
+
+
+
+
 
 /*Giving height to the t-shrt section*/
 .T-shirt{
@@ -1585,6 +1686,142 @@
   opacity: 0;
   transition: top 0.88s ease,opacity 1.98s ease ;
 }
+
+
+
+
+
+
+
+
+
+
+
+#opt3_pr2_rl,#opt3_pr2_hv{
+  position: absolute;
+  top:70px;
+  left: 630px;
+  width:200px;
+  height: 300.82px;
+  border-radius: 5px;
+  transition: opacity 0.6s ease;
+}
+
+#opt3_pr1_rl,#opt3_pr1_hv{
+  position: absolute;
+  top:70px;
+  left: 400px;
+  width:200px;
+  height: 300.82px;
+  border-radius: 5px;
+  transition: opacity 0.6s ease;
+}
+
+#opt3_pr1_hv{opacity: 0;}
+#opt3_pr2_hv{opacity: 0;}
+#shirts_pr1_nme{
+  position: absolute;
+  top:390px;
+  left: 470px;
+  text-decoration: none;
+  color: black;
+}
+#shirts_pr1_nme:hover{
+  opacity: 0.5;
+}
+
+#shirts_pr2_nme:hover{
+  opacity: 0.5;
+}
+
+#shirts_pr1_fl:hover{
+    #opt3_pr1_rl{
+      opacity: 0;
+     }
+     #opt3_pr1_hv{opacity: 1;}
+}
+
+#shirts_pr2_fl:hover{
+  #opt3_pr2_rl{
+    opacity: 0;
+   }
+   #opt3_pr2_hv{opacity: 1;}
+}
+
+
+#shirts_pr1_prc{
+  position: absolute;
+  top:420px;
+  left: 465px;
+}
+
+#shirts_pr2_nme{
+  position: absolute;
+  top:390px;
+  left: 650px;
+  text-decoration: none;
+  color: black;
+}
+
+#shirts_pr2_prc{
+  position: absolute;
+  top:420px;
+  left: 670px;
+}
+
+
+/*STOCK BOX*/
+/*for product 1*/
+#shirts_pr1_s,#shirts_pr1_xs,#shirts_pr1_m,#shirts_pr1_l,#shirts_pr1_xl{
+  font-size: 20px;
+  height: 35px;
+  width: 39px;
+  color:black;
+  text-decoration: none;
+  border: 2px solid rgba(211, 211, 211,0.9);
+  padding: 10px;
+}
+#shirts_pr1_xxl,#shirts_pr2_xxl{
+  position: relative;
+  top: 30px;
+  font-size: 20px;
+  height: 35px;
+  width: 39px;
+  color:black;
+  text-decoration: none;
+  border: 2px solid rgba(211, 211, 211,0.9);
+  padding: 5px;
+}
+
+/*For product 2*/
+#shirts_pr2_s,#shirts_pr2_xs,#shirts_pr2_m,#shirts_pr2_l,#shirts_pr2_xl{
+  font-size: 19px;
+  height: 35px;
+  width: 42.5px;
+  color:black;
+  text-decoration: none;
+  border: 2px solid rgba(211, 211, 211,0.9);
+  padding: 9px;
+}
+
+
+.shirts_pr1_stc{
+  width: 500px;
+  height: 500px;
+  position: relative;
+  top:30rem;
+  left:45vh;
+}
+
+.shirts_pr2_stc{
+  width: 500px;
+  height: 500px;
+  position: relative;
+  top:-20px;
+  left:75vh;
+}
+
+
 
 
 
