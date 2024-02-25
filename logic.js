@@ -731,7 +731,7 @@ if(curnt_hg>cn3_hg){
   Tshirt_pr3_fl.style.opacity = 1;
   Tshirt_pr4_fl.style.top = 0;
   Tshirt_pr4_fl.style.opacity = 1;
-}
+} 
 }
 )
 joggers_dis.style.display = "none";
