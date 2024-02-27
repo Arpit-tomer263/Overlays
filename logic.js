@@ -163,7 +163,7 @@ else {
   navbar.style.transition = 'background-color 0.5s ease 0.001s';
   navbar.style.backgroundColor = 'white';
 
-  search.style.backgroundImage = 'url(/Image/Search_new.png)';
+  search.style.backgroundImage = 'url(Image/Search_new.png)';
   search.style.width = '25px';
   search.style.height = '25px';
   search.style.position = 'absolute';
@@ -174,7 +174,7 @@ else {
   Heading.style.color = 'rgba(0, 0, 0, 0.5)';
 
   
-  logo.style.backgroundImage = 'url(/Image/logo.avif)';
+  logo.style.backgroundImage = 'url(Image/logo.avif)';
   logo.style.height = '90px';
   logo.style.width = '100px';
   logo.style.position = 'absolute';
@@ -187,22 +187,6 @@ else {
   women.style.color = 'black';
   rich_cotton.style.color = 'black';
   get_in_touch.style.color = 'black';
-});
-
-// This situation is also same as upper when user scroll up the hover effect does not work so this is the soltion of this code 
-  // Add event listener to remove styles when mouse leaves the navbar 
-  navbar.addEventListener('mouseleave', function() {
-  // Remove hover effect styles when mouse leaves the navbar
-  navbar.removeAttribute('style');
-  search.removeAttribute('style');
-  Heading.removeAttribute('style');
-  logo.removeAttribute('style');
-  home.removeAttribute('style');
-  shop_all.removeAttribute('style');
-  men.removeAttribute('style');
-  women.removeAttribute('style');
-  rich_cotton.removeAttribute('style');
-  get_in_touch.removeAttribute('style');
 });
 
   }
