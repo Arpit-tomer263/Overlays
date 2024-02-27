@@ -55,7 +55,7 @@
         color: rgba(0,0,0,0.5);
     }
     #logo{
-        background-image: url(/Image/logo.avif);
+        background-image: url(Image/logo.avif);
         background-size: contain;
             background-repeat: no-repeat;
         height: 90px;
@@ -188,7 +188,7 @@
 #logo{
     width: 80px;
     height: 80px;
-    background-image: url(/Image/logo_real.avif);
+    background-image: url(Image/logo_real.avif);
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
