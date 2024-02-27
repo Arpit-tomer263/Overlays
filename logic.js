@@ -125,9 +125,12 @@ if (scroll >= max_length) {
     search.style.top = "9px";
     search.style.left = "0px";
     navbar.classList.remove('hover');
-} else {
+
+}
+ 
+else {
     navbar.style.top = "2rem"; // Reset position to static when scrolling back up
-    navbar.style.backgroundColor = "white"; // Reset background color
+    navbar.style.backgroundColor = ""; // Reset background color
     logo.style.backgroundImage = "url(/Image/logo_real.avif)";
     logo.style.height = "80px";
     logo.style.width = "80px";
@@ -148,7 +151,7 @@ if (scroll >= max_length) {
     search.style.left = "0px";
 
     // Removing hover effect from navbar
-    navbar.classList.add('hover');
+    navbar.classList.remove('hover');
 
 
 
@@ -158,7 +161,7 @@ if (scroll >= max_length) {
   navbar.addEventListener('mouseenter', function() {
   // Apply hover effect styles when mouse enters the navbar
   navbar.style.transition = 'background-color 0.5s ease 0.001s';
-  navbar.style.backgroundColor = 'transparent';
+  navbar.style.backgroundColor = 'white';
 
   search.style.backgroundImage = 'url(/Image/Search_new.png)';
   search.style.width = '25px';
