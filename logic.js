@@ -131,7 +131,7 @@ if (scroll >= max_length) {
 else {
     navbar.style.top = "2rem"; // Reset position to static when scrolling back up
     navbar.style.backgroundColor = ""; // Reset background color
-    logo.style.backgroundImage = "url(/Image/logo_real.avif)";
+    logo.style.backgroundImage = "url(Image/logo_real.avif)";
     logo.style.height = "80px";
     logo.style.width = "80px";
     logo.style.top = "10px";
