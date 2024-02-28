@@ -1972,3 +1972,95 @@
 #Follow{
    font-weight: 600;
 }
+
+
+#Follow{
+  position:absolute;
+  top:69px;
+  left:1100px;
+}
+
+
+#touch{
+  position: absolute;
+  top:110px;
+  left:1100px;
+}
+
+
+
+#tw,#tw2{
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 150px;
+  left: 1030px;
+  border:2px solid rgba(211, 211, 211,0.9);
+  transition:  background-color 1s ease,bottom;
+  padding: 15px;
+}
+
+
+#fb,#fb1{
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 150px;
+  left: 1184px;
+  border:2px solid rgba(211, 211, 211,0.9);
+  padding: 15px;
+  
+}
+
+
+
+#yt,#yt3{
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 150px;
+  left: 1081px;
+  border:2px solid rgba(211, 211, 211,0.9);
+  padding: 15px;
+ 
+
+}
+
+
+
+#dis,#dis4{
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 150px;
+  left: 1132px;
+  border:2px solid rgba(211, 211, 211,0.9);
+  padding: 15px;
+ 
+}
+
+#tw:hover{
+  background-color: black;
+}
+
+
+.end{
+  position: absolute;
+  top:55vh;
+}
+
+.end2{
+  position: absolute;
+  top:55vh;
+  left:160px;
+}
+
+
+.square {
+  position: absolute;
+  top: 55.4vh;
+  left:140px;
+  width: 3.98px; /* Adjust width as needed */
+  height: 3.98px; /* Adjust height as needed */
+  background-color: #000000; /* Background color of the square */
+}
