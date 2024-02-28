@@ -1,5 +1,6 @@
 
 // Getting Acess of the HTML ID's or Classes 
+const nvmn = document.querySelector('.navbar-mn')
 const thum1 = document.querySelector("#thumbnail");
 const thum2 = document.querySelector("#thumbnail2");
 const navbar = document.querySelector(".navbar");
@@ -124,11 +125,11 @@ if (scroll >= max_length) {
     search.style.height = "25px";
     search.style.top = "9px";
     search.style.left = "0px";
-    navbar.classList.remove('hover');
+    navbar.classList.remove('hover-effect');
 
 }
  
-else {
+else if (scroll <= max_length) {
     navbar.style.top = "2rem"; // Reset position to static when scrolling back up
     navbar.style.backgroundColor = ""; // Reset background color
     logo.style.backgroundImage = "url(Image/logo_real.avif)";
@@ -151,43 +152,54 @@ else {
     search.style.left = "0px";
 
     // Removing hover effect from navbar
-    navbar.classList.remove('hover');
-
-
-
-// When i do this i will face some problems like when user in scroll position the over effect does not work so these elements controll this error
-
-  // Add event listeners for mouseenter and mouseleave
-  navbar.addEventListener('mouseenter', function() {
-  // Apply hover effect styles when mouse enters the navbar
-  navbar.style.transition = 'background-color 0.5s ease 0.001s';
-  navbar.style.backgroundColor = 'white';
-
-  search.style.backgroundImage = 'url(Image/Search_new.png)';
-  search.style.width = '25px';
-  search.style.height = '25px';
-  search.style.position = 'absolute';
-  search.style.top = '9px';
-  search.style.left = '0px';
-
   
-  Heading.style.color = 'rgba(0, 0, 0, 0.5)';
+   navbar.addEventListener('mouseenter',()=>{
+    navbar.style.backgroundColor = "white";
+    home.style.color = "black";
+    Heading.style.color = "black";
+    shop_all.style.color = "black";
+    men.style.color = "black";
+    women.style.color = "black";
+    rich_cotton.style.color = "black";
+    get_in_touch.style.color = "black";
+    search.style.color = "black";
+    logo.style.backgroundImage = "url(Image/logo.avif)";
+    logo.style.height = "90px";
+    logo.style.width = "100px";
+    logo.style.top = '0';
+    logo.style.left = "630px";
+    search.style.backgroundImage = "url(Image/Search_new.png)";
+    search.style.width = "25px";
+    search.style.height = "25px";
+    search.style.top = "9px";
+    search.style.left = "0px";
+    // navbar.classList.add('hover-effect');
+   })
+   nvmn.addEventListener("mouseout",()=>{
+    navbar.style.top = "2rem"; // Reset position to static when scrolling back up
+    navbar.style.backgroundColor = ""; // Reset background color
+    logo.style.backgroundImage = "url(Image/logo_real.avif)";
+    logo.style.height = "80px";
+    logo.style.width = "80px";
+    logo.style.top = "10px";
+    logo.style.left = "635px";
+    home.style.color = "white";
+    Heading.style.color = "white";
+    shop_all.style.color = "white";
+    men.style.color = "white";
+    women.style.color = "white";
+    rich_cotton.style.color = "white";
+    get_in_touch.style.color = "white";
+    search.style.color = "white";
+    search.style.backgroundImage = "url(Image/search_icone.png)";
+    search.style.width = "25px";
+    search.style.height = "25px";
+    search.style.top = "9px";
+    search.style.left = "0px";
+    // navbar.classList.remove('hover-effect');
 
-  
-  logo.style.backgroundImage = 'url(Image/logo.avif)';
-  logo.style.height = '90px';
-  logo.style.width = '100px';
-  logo.style.position = 'absolute';
-  logo.style.top = '0px';
-  logo.style.left = '630px';
+   })
 
-  home.style.color = 'black';
-  shop_all.style.color = 'black';
-  men.style.color = 'black';
-  women.style.color = 'black';
-  rich_cotton.style.color = 'black';
-  get_in_touch.style.color = 'black';
-});
 
   }
 });
